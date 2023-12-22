@@ -41,8 +41,8 @@ function Header() {
             <Link href="/tutos">
               <span className={styles.accueil}>Tutos</span>
             </Link>
-            <Link href='/dons'>
-            <button className={styles.accueil}>Dons</button>
+            <Link href="/dons">
+              <button className={styles.accueil}>Dons</button>
             </Link>
             <Link href="/about">
               <span className={styles.accueil}>A propos</span>
@@ -53,10 +53,9 @@ function Header() {
         <div className={styles.buttons}>
           {/* <p><button className={styles.inscription}>Inscription</button></p> */}
           <Modale />
+        </div>
+        <div>
           <DropDown />
-          {/* <Link href="/profils">
-            <a>Profils</a>
-          </Link> */}
         </div>
       </div>
     </div>

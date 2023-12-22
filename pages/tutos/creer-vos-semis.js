@@ -112,8 +112,8 @@ function CreerVosSemis() {
                   des graines de qualité qui vous permettront de cultiver de
                   beaux fruits
                   <p style={{ fontWeight: "bold" }}>
-                    Voici quelques exemples de fruits qui produisent des graines
-                    :
+                    Voici quelques exemples de fruits qui produisent des
+                    graines:
                   </p>
                   <ul className={styles.List}>
                     <li>

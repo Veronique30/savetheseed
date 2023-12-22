@@ -4,13 +4,12 @@
   font-style: normal;
   font-weight: 400;
 
-  position: relative;
-  top: -55px;
-  
+  /* position: relative; */
+  margin-top: 80px;
+  /* margin-right: 60px; */
+  /* padding-right: 60px; */
 
-.icon {
+  .icon {
     font-size: 40px;
-
-    
   }
 }

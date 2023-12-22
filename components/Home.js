@@ -31,7 +31,6 @@ fetch("http://localhost:3000/seeds/allseeds")
   return (
     <main className={styles.main}>
       <h1 className={styles.title}></h1>
-
       <div className={styles.buttonCountainer1}>
         <div>
           <input

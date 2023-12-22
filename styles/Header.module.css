@@ -7,13 +7,13 @@
 }
 
 .mainContainer {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  padding: 0 20px;
+  padding: 20px;
   overflow: hidden;
 }
 
@@ -30,7 +30,7 @@
 
 .title {
   padding: 20px;
-  font-family: baskervville;
+  font-family: "baskervville";
   font-size: 70px;
   font-weight: 600;
   display: flex;
@@ -42,6 +42,9 @@
   justify-content: space-between;
   height: 26px;
   width: 100px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  margin-top: 20px;
 }
 
 .inscription {
@@ -52,7 +55,7 @@
   justify-content: space-around;
   font-size: 17px;
   border-radius: 12px;
-  font-family: poppins;
+  font-family: "poppins";
 }
 
 .inscription:hover {
@@ -66,7 +69,7 @@
   display: flex;
   font-size: 17px;
   border-radius: 12px;
-  font-family: poppins;
+  font-family: "poppins";
 }
 .connection:hover {
   box-shadow: 0 12px 13px 0 #224229, 0 17px 30px 0 #224229;
@@ -81,13 +84,13 @@
   transition-duration: 0.2s;
   font-size: 20px;
   padding: 15px;
-  font-family: poppins;
+  font-family: "poppins";
   cursor: pointer;
 }
 
 .accueil:hover {
   background-color: #e1e8ba;
   color: #224229;
-  font-family: poppins;
+  font-family: "poppins";
   text-decoration: underline;
 }

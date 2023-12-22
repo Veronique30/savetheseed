@@ -44,7 +44,8 @@ function Tuto() {
 
       <TutoCard
         sousTitle="Créer vos semis"
-        desc="Les graines de fruits se trouve
+        desc="Les graines de fruits se trouve enfermées dans une coque ou
+        une enveloppe.
         Elles peuvent être récupérées pour être replantées et produire
         de nouveaux fruits.
         La récupération des graines de fruits est un excellent moyen

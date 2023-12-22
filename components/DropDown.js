@@ -22,15 +22,10 @@ const DropDown = () => {
       >
         <FontAwesomeIcon icon={faUser} />
         <Link href="/profils">
-          <a style={{ textDecoration: 'none', color: "black" }}>Profils</a>
+          <a style={{ textDecoration: "none", color: "black" }}>Profils</a>
         </Link>
       </div>
-      {isOpen && (
-        <ul>
-          <li>Mon profil</li>
-          {/* <li>Déconnexion</li> */};
-        </ul>
-      )}
+      {isOpen}
     </div>
   );
 };
