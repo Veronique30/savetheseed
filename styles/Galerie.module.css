@@ -33,18 +33,28 @@
   margin-bottom: 10px;
 }
 
-.fruits {
-  color: #224229;
+.fruitContainer {
+  /* color: #224229;
   font-weight: 500;
   margin-left: 30px;
   font-size: x-large;
-  margin-bottom: 20px;
-}
-
-.fruitContainer {
-  margin: auto;
+  margin-bottom: 20px; */
+  display: flex;
+  justify-content: center;
+  padding-left: 5px;
 }
 
 .fruitContainer2 {
   margin-top: 80px;
+  padding-left: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.fruitContainer3 {
+  margin-top: 80px;
+  padding-left: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
 }
