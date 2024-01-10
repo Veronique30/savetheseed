@@ -1,4 +1,4 @@
-import styles from "../styles/Profil.module.css";
+import styles from "../styles/profil.module.css";
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 function Profil() {
@@ -8,7 +8,7 @@ function Profil() {
   const [listePlantes, setListePlantes] = useState(0);
   useEffect(() => {
     console.log(token);
-    fetch(`http://localhost:3000/seeds/findseeds`, {
+    fetch(`https://savetheseed-back.vercel.app/seeds/findseeds`, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -35,7 +35,7 @@ function Profil() {
       return;
     }
     setListePlantes((prevValue) => prevValue + 1);
-    fetch("http://localhost:3000/seeds/newseed", {
+    fetch("https://savetheseed-back.vercel.app/seeds/newseed", {
       method: "POST",
       headers: {
         Accept: "application/json",

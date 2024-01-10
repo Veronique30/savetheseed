@@ -42,7 +42,7 @@ function Forum() {
 
   //click to search the messages
   function handleSeach() {
-    fetch(`http://localhost:3000/message/filtermessage/${searchMsg}`)
+    fetch(`https://savetheseed-back.vercel.app/${searchMsg}`)
       .then((response) => response.json())
       .then((data) => {
         setMessage(data.message);
@@ -139,11 +139,9 @@ function Forum() {
 
 function MessageBox(props) {
   return (
-    <Link href={`/forum/${props.slug}`} >
-      <div className={styles.bottom} style={{cursor:"pointer"}}>
-        <div>
-          {props.title}
-        </div>
+    <Link href={`/forum/${props.slug}`}>
+      <div className={styles.bottom} style={{ cursor: "pointer" }}>
+        <div>{props.title}</div>
         <div>{props.date_publish}</div>
         <div>{props.nbAnswers} réponses</div>
       </div>

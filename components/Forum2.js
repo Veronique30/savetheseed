@@ -9,10 +9,9 @@ function Forum2() {
   const router = useRouter();
   const [comment, setComment] = useState("");
   const [title, setTitle] = useState("");
- 
 
   const onClickHandler = () => {
-    fetch("http://localhost:3000/message/newmessage", {
+    fetch("https://savetheseed-back.vercel.app/message/newmessage", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title: title, text: comment, token: user.token }),

@@ -2,31 +2,29 @@ import styles from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../reducers/user";
-import { Button } from 'antd';
-import Link from 'next/link';
+import { Button } from "antd";
+import Link from "next/link";
 
 function Home() {
-
-
   const [allseeds, setAllseeds] = useState("");
 
   const [lookingForSeeds, setLookingForSeeds] = useState("");
-  
+
   //Fonction lien avec la page Tutos quand appui sur Enter
   const handleKeyDown = (event) => {
-      if(event.key === 'Enter'){
-      window.location.href=`/tutos`
+    if (event.key === "Enter") {
+      window.location.href = `/tutos`;
     }
-  }
+  };
 
-useEffect(() => {  
-fetch("http://localhost:3000/seeds/allseeds")
-.then(response => response.json())
-.then(data => {
-  console.log(data);
-  setAllseeds(data)
-})
-}, []);
+  useEffect(() => {
+    fetch("https://savetheseed-back.vercel.app/seeds/allseeds")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setAllseeds(data);
+      });
+  }, []);
 
   return (
     <main className={styles.main}>
@@ -43,8 +41,10 @@ fetch("http://localhost:3000/seeds/allseeds")
           />
         </div>
         <div>
-          <Link href='/maps'>
-          <Button className={styles.button2}>Quelles Graines Planter à proximité</Button>
+          <Link href="/maps">
+            <Button className={styles.button2}>
+              Quelles Graines Planter à proximité
+            </Button>
           </Link>
         </div>
       </div>

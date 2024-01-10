@@ -14,13 +14,14 @@ function Inscription() {
   const [signUpEmail, setSignUpEmail] = useState("");
   const [signUpBirthday, setSignUpBirthday] = useState("");
   const [signUpPhone, setSignUpPhone] = useState("");
+
   const dispatch = useDispatch();
 
   //Pour être redirigé sur la page d'accueil
   const router = useRouter();
 
   const handleRegister = () => {
-    fetch("http://localhost:3000/users/signup", {
+    fetch("https://savetheseed-back.vercel.app/users/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -54,7 +55,6 @@ function Inscription() {
       });
   };
 
- 
   return (
     <div>
       <h1 className={styles.title}>CRÉER UN COMPTE</h1>
