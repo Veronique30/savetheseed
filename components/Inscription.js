@@ -16,7 +16,7 @@ function Inscription() {
   const [signUpPhone, setSignUpPhone] = useState("");
 
   const dispatch = useDispatch();
-
+  //use dispatch et useSelector sont chargés de la communication avec le store
   //Pour être redirigé sur la page d'accueil
   const router = useRouter();
 
@@ -66,6 +66,7 @@ function Inscription() {
             className={styles.input}
             id="username"
             onChange={(e) => setSignUpUsername(e.target.value)}
+            //la valeur récupéré toujours avec .value
             value={signUpUsername}
             type="text"
           />
